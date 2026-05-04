@@ -1,6 +1,8 @@
 name: Update YouTube Data
 
 on:
+  push:
+    branches: [master]
   schedule:
     - cron: '0,30 * * * *'  # 毎時 00分・30分
   workflow_dispatch:         # 手動実行も可
