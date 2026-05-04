@@ -1,8 +1,6 @@
 name: Sync upstream (kanade-milestone)
 
 on:
-  push:
-    branches: [master]
   schedule:
     - cron: '0 4 * * *'  # 毎日 04:00 UTC
   workflow_dispatch:
